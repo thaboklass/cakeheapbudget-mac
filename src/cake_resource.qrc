@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/budget.png</file>
+        <file>images/cake_copy.png</file>
+        <file>images/cake_cut.png</file>
+        <file>images/cake_new.png</file>
+        <file>images/cake_open.png</file>
+        <file>images/cake_paste.png</file>
+        <file>images/cake_save.png</file>
+        <file>images/inventory.png</file>
+        <file>images/reminders.png</file>
+        <file>images/savings.png</file>
+    </qresource>
+</RCC>

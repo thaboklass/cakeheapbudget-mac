@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BudgetFrame</class>
+ <widget class="QFrame" name="BudgetFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QLabel" name="debtLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>195</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>  Debt</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="incomeTable_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>30</y>
+     <width>581</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nature</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tax(%)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Net Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IDCode</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="expensesTable_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>410</y>
+     <width>581</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Priority Level</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Penalty</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Net Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IDCode</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="incomeLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>   Income</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addDebtButton_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>345</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Debt</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveMoneyButton_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>535</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Money</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addExpenseButtom_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>535</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Expense</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addIcomeButtom_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>155</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Income</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="expensesLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>375</y>
+     <width>571</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>   Expenses</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="debtTable_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>220</y>
+     <width>581</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>581</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Priority Level</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>APR(%)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Net Amount</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IDCode</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="saveMoneyButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>530</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Money</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

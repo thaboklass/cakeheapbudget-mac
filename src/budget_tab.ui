@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BudgetTab</class>
+ <widget class="QTabWidget" name="BudgetTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="tab">
+   <attribute name="title">
+    <string>Tab 1</string>
+   </attribute>
+   <widget class="QPushButton" name="saveMoneyButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>540</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Money</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addIcomeButtom_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Income</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addDebtButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Debt</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="debtTable_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>225</y>
+      <width>581</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>581</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Priority Level</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>APR(%)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Penalty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Net Amount</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="expensesLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>380</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>   Expenses</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="incomeTable_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>35</y>
+      <width>581</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nature</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tax(%)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Net Amount</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="incomeLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>   Income</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="expensesTable_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>415</y>
+      <width>581</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Priority Level</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Penalty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Net Amount</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="addExpenseButtom_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>540</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Expense</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="debtLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>  Debt</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
