@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>remindersPage</class>
+ <widget class="QDialog" name="remindersPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reminders</string>
+  </property>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>add.gif</normaloff>add.gif</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>delete.gif</normaloff>delete.gif</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>200</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>edit.gif</normaloff>edit.gif</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>34</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendar">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>440</y>
+     <width>220</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>118</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>598</width>
+      <height>598</height>
+     </rect>
+    </property>
+    <widget class="QTableWidget" name="remindersTable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>581</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Subject</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QGroupBox" name="messageBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>571</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Message</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="remindersLabel">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>5</y>
+       <width>571</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>   Reminders</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>remindersTable</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>editButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>calendar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

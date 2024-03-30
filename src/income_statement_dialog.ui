@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>incomeStatementDialog</class>
+ <widget class="QDialog" name="incomeStatementDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Income Statement</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>cake_heap_icon.gif</normaloff>cake_heap_icon.gif</iconset>
+  </property>
+  <widget class="QGroupBox" name="incomeStatementBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1001</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Income Statement</string>
+   </property>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>21</y>
+      <width>971</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>610</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

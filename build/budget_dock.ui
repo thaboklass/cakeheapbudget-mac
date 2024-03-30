@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BudgetDock</class>
+ <widget class="QDockWidget" name="BudgetDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Budget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QPushButton" name="deleteButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>130</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../wamp/www/budget_project/budget_project/gui/delete.gif</normaloff>../../../wamp/www/budget_project/budget_project/gui/delete.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="balanceBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>350</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Balance</string>
+    </property>
+    <widget class="QLabel" name="currentBalanceLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Current Budget Balance:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="currentBalanceLineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>598</width>
+       <height>598</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../wamp/www/budget_project/budget_project/gui/add.gif</normaloff>../../../wamp/www/budget_project/budget_project/gui/add.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>22</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendar">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>440</y>
+      <width>221</width>
+      <height>151</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../wamp/www/budget_project/budget_project/gui/edit.gif</normaloff>../../../wamp/www/budget_project/budget_project/gui/edit.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>34</width>
+      <height>24</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="totalsBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>170</y>
+      <width>201</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Totals</string>
+    </property>
+    <widget class="QLabel" name="totalMonthlyIncomeLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Monthly Income:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="totalMonthlyIncomeLineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="totalMonthlyDebtLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Monthly Debt:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="totalMonthlyDebtLineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="totalMonthlyExpenseLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Total Monthly Expenses:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="totalMonthlyExpensesLineEdit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
